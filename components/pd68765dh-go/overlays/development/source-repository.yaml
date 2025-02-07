@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: pd68765dh-go-repository
+spec:
+  url: https://github.com/rhtap-test-organization-jk/pd68765dh-go

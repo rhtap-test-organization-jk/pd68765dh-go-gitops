@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pd68765dh-go-gitops
+  description: This is GitOps manifest for pd68765dh-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: pd68765dh-go
+    backstage.io/kubernetes-id: pd68765dh-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: pd68765dh-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:pd68765dh-go
